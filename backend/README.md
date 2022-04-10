@@ -1,7 +1,17 @@
 ### Login And Register backend using (NodeJs - Fastify - Mongodb)
 
+##### How to run:
+create `.env` file contains 
+>SECRET_JWT = // base for JWT
+>CONNECT_DB = // databse url
 
-##### Docs: [Documentation](http://localhost:5000/docs/) 
+```
+npm install
+npm run dev (or) npm run start
+```
+>server runs on `localhost:5000`
+
+##### Docs: [Swagger Documentation](http://localhost:5000/docs/) 
 ##### Routes:
 1. POST: Register `/regester`
   body : {name, email, password}

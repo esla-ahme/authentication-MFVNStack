@@ -10,6 +10,10 @@ fastify.register(require("fastify-mongodb"), {
   url: process.env.CONNECT_DB,
 });
 
+fastify.register(require('fastify-cors'), {
+  origin: '*'
+})
+
 fastify.register(require('fastify-swagger'), {
   exposeRoute: true,
   routePrefix: '/docs',
